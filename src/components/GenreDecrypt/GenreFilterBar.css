@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+.genre-bar {
+  font-family: "Courier New", Courier, monospace;
+  width: 20em;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-weight: 400;
+  font-size: 1.2em;
+}
+
+.genre-filter-bar {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5%;
+}

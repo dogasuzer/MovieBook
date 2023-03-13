@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+.share-review-btn-closed {
+  background-color: rgba(214, 116, 94, 0.5);
+  width: 1148px;
+  height: 131px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  text-align: center;
+  color: #811b10;
+  margin-top: 3%;
+  border: none;
+  border-radius: 15pt;
+}
+
+.new-review {
+  justify-content: center;
+  display: flex;
+  font-size: 1em;
+}

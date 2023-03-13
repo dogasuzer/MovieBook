@@ -1,0 +1,7 @@
+.no-movies-found {
+  font-size: 2em;
+  padding-bottom: 14%;
+  padding-top: 7%;
+  font-weight: 500;
+  color: rgb(43, 41, 41);
+}

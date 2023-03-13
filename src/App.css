@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter");
+
+.App {
+  text-align: center;
+}
+.Contact {
+  display: flex;
+  font-size: medium;
+  font-weight: normal;
+  flex-direction: column;
+  text-align: start;
+}
+.Contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.About {
+  display: flex;
+  flex-direction: column;
+  font-size: medium;
+  font-weight: normal;
+  width: 40%;
+  text-align: left;
+}
+.footer {
+  background-color: #8b2d22;
+  width: 100%;
+}
+.copyright {
+  background-color: #9c382d;
+  color: #4b1c11;
+}
+.footer-upper-part {
+  display: flex;
+  align-self: flex-end;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  font-size: large;
+  font-weight: bold;
+  color: #d6745e;
+}
+
+.App-logo {
+  width: 347px;
+  height: 65px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  color: #d6745e;
+  text-decoration: none;
+  top: 56px;
+}
+
+.bolder-logo {
+  font-weight: 1000;
+}
+
+.App-header {
+  width: 100%;
+  height: 142px;
+  background: #811b10;
+  display: flex;
+  align-items: center;
+}
+
+.App-nav {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: center;
+}
+
+.App-nav-movies {
+  width: 87px;
+  height: 30px;
+  left: 344px;
+  margin-left: 3%;
+  text-decoration: none;
+  color: #ffffff;
+}
+.App-header a:active {
+  color: #d6745e;
+}
+
+.App-nav-posts {
+  height: 30px;
+  margin-left: 20%;
+  color: #ffffff;
+  text-decoration: none;
+}
+.App-nav-mypage {
+  height: 30px;
+  margin-left: 20%;
+  min-width: max-content;
+  color: #ffffff;
+  text-decoration: none;
+}
+.Login-widget {
+  width: 181px;
+  min-width: 120px;
+  height: 51px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #811b10;
+  background: #d6745e;
+  border-radius: 30px;
+  border-color: #d6745e00;
+  display: flex;
+  margin-left: 35%;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .App-nav {
+    display: none;
+  }
+  .Login-widget {
+    display: none;
+  }
+}

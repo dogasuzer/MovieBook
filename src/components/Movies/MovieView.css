@@ -1,0 +1,51 @@
+.single-movie {
+  display: flex;
+  text-decoration: none;
+  flex-direction: column;
+  margin: 1em;
+  padding: 5em;
+  padding-top: 0em;
+  padding-bottom: 4em;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  border-radius: 2em;
+  width: 15em;
+  height: 30em;
+}
+
+.single-movie img {
+  width: 100%;
+  border-radius: 1.2em;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.vote {
+  background: #d6745e;
+  border: 0.3em solid;
+  color: white;
+  border-radius: 100%;
+  width: 2.7em;
+  height: 2.7em;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6em;
+  text-align: center;
+  position: relative;
+  left: -1em;
+  top: 2.3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.movie-title {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1.3em;
+  text-align: center;
+  color: #811b10;
+  max-width: 12em;
+}

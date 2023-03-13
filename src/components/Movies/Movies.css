@@ -1,0 +1,11 @@
+.loading-content {
+  display: flex;
+  font-size: xx-large;
+  width: 100%;
+  flex-direction: column;
+}
+
+.Popular-movies-list {
+  display: flex;
+  flex-direction: column;
+}

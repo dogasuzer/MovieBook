@@ -1,0 +1,26 @@
+.Popular-movies-list {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  background-color: none;
+  display: flex;
+  justify-self: center;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.pop-movies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-content: space-between;
+  margin: 3%;
+}
+
+.Popular-movies-heading {
+  top: 15px;
+  width: 100%;
+  font-size: 35px;
+  line-height: 36px;
+  color: #811b10;
+}

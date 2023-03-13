@@ -1,0 +1,45 @@
+.movies-page {
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-page-genre-bar {
+  height: 100pt;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-page-genre-bar button {
+  min-width: 120px;
+  height: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 36px;
+  color: #811b10;
+  background: #d6745e;
+  border-radius: 30px;
+  border-color: #d6745e00;
+  display: flex;
+  align-self: flex-end;
+  margin-left: 10%;
+}
+
+.movie-page-genre-dec {
+  margin-top: 68pt;
+  margin-right: 10%;
+  margin-bottom: 1%;
+}
+
+.movie-list-2010-filter {
+  width: fit-content;
+}
+
+.movie-page-genre-bar {
+  margin-bottom: 2%;
+}
+.movie-page-movies {
+  width: 100%;
+}

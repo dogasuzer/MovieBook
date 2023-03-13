@@ -1,0 +1,97 @@
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  width: 400px;
+  height: 50px;
+  margin: 20px;
+  font-size: 20px;
+  color: rgb(35, 31, 31);
+}
+
+button {
+  border: none;
+  color: white;
+  font-weight: normal;
+  width: 181px;
+  height: 51px;
+  font-family: "Inter";
+  font-style: normal;
+  font-size: 20px;
+  line-height: 36px;
+  background: #811b10;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+span {
+  font-size: 3em;
+  color: rgb(46, 25, 25);
+  margin: 1em;
+  display: flex;
+}
+
+.login {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+}
+.loginWrapper {
+  margin: 5%;
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: 8%;
+  flex-direction: column;
+  background-color: #d6745e;
+  z-index: 2;
+  justify-self: center;
+  border-radius: 80px;
+  align-items: center;
+  padding: 5%;
+}
+
+.login-page-buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  width: 25em;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-page-buttons button {
+  font-weight: 600;
+  font-size: 1.3em;
+  margin-bottom: 6%;
+  min-width: max-content;
+}
+.loginButton {
+  color: #f2e3e3;
+  min-width: max-content;
+}
+.loginRegisterButton {
+  padding: 1em;
+  color: #811b10;
+  background-color: #f2e3e3;
+}
+
+.bottomBox label {
+  font-size: 1.5em;
+  align-self: flex-start;
+  display: flex;
+  margin-left: 5%;
+}
+
+.bottomBox {
+  justify-items: flex-start;
+  display: flex;
+  flex-direction: column;
+}

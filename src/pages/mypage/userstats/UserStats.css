@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+.bolder {
+  font-weight: bolder;
+}
+.user-stats {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  align-items: center;
+  color: #811b10;
+}
+.user-stats-container {
+  background-color: rgba(214, 116, 94, 0.774);
+  width: 1148px;
+  height: 131px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 38px;
+  margin-top: 3%;
+  border: none;
+  border-radius: 15pt;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: center;
+}
+
+.user-stats-num {
+  background: rgba(91, 221, 70, 1);
+  color: white;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+}

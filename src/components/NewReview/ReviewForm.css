@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+.review-form {
+  background-color: rgba(214, 116, 94, 0.5);
+  width: 85%;
+  min-height: 250px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 38px;
+  color: #811b10;
+  margin-top: 3%;
+  border: none;
+  border-radius: 15pt;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.review-form-action {
+  margin: 5pt;
+  height: 51px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  color: #811b10;
+  background: #d6745e;
+  border-radius: 5pt;
+  border-color: #d6745e00;
+  width: max-content;
+}
+
+.review-form-div {
+  justify-content: center;
+  display: flex;
+  padding: 3%;
+  width: 100%;
+}
+.review-form-buttons {
+  display: flex;
+  align-self: center;
+}
+input {
+  font-size: 1em;
+  border-radius: 1em;
+}
+@media (max-width: 1000px) {
+  input {
+    background-color: aquamarine;
+    max-width: 40%;
+    border-radius: 1em;
+  }
+}

@@ -1,0 +1,92 @@
+.img {
+  width: 100%;
+  height: 339px;
+  left: 0px;
+  top: 116px;
+  background: rgba(129, 27, 16, 0.6);
+  object-fit: cover;
+}
+
+.rectangle {
+  width: 100%;
+  height: 339px;
+  left: 0px;
+  top: 142px;
+  background-color: rgba(129, 27, 16, 0.6);
+  border: 1px;
+  border-color: rgba(129, 27, 16, 0.6);
+  position: absolute;
+}
+
+.poster-quote-h2 {
+  width: 302px;
+  height: 56px;
+  left: 48px;
+  top: 135px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 60px;
+  line-height: 73px;
+  color: #ffffff;
+  position: absolute;
+  text-align: left;
+}
+
+.poster-quote-h3 {
+  max-width: 864px;
+  height: 48px;
+  left: 48px;
+  top: 230px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #ffffff;
+  position: absolute;
+  display: flex;
+  text-align: left;
+}
+.see-newest-button {
+  width: 530px;
+  min-width: 504px;
+  height: 56px;
+  top: 370px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #811b10;
+  background: #d6745e;
+  border-radius: 30px;
+  border-color: #d6745e00;
+  position: absolute;
+  display: flex;
+  margin-left: 45px;
+  align-items: center;
+  text-decoration: none;
+  justify-content: center;
+}
+
+.poster-contents {
+  display: absolute;
+}
+
+@media (max-width: 1000px) {
+  .see-newest-button {
+    display: none;
+  }
+}
+@media (min-width: 1000px) {
+  .see-all-features {
+    display: none;
+  }
+}
+
+.see-all-features {
+  font-size: 1.2em;
+  background-color: #df2900;
+  font-weight: 500;
+}
