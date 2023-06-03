@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter");
+@import url('https://fonts.googleapis.com/css2?family=Inter');
 
 .App {
   text-align: center;
@@ -26,6 +26,8 @@
 .footer {
   background-color: #8b2d22;
   width: 100%;
+  position: relative;
+  bottom: 0;
 }
 .copyright {
   background-color: #9c382d;
@@ -44,7 +46,7 @@
 .App-logo {
   width: 347px;
   height: 65px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 40px;
@@ -67,7 +69,7 @@
 }
 
 .App-nav {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 500;
   font-size: 25px;
@@ -108,7 +110,7 @@
   width: 181px;
   min-width: 120px;
   height: 51px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 30px;
@@ -118,12 +120,12 @@
   border-radius: 30px;
   border-color: #d6745e00;
   display: flex;
-  margin-left: 35%;
+  position: absolute;
+  right: 5%;
   align-self: center;
   justify-content: center;
   align-items: center;
 }
-
 @media (max-width: 1000px) {
   .App-nav {
     display: none;
