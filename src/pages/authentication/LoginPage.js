@@ -1,49 +1,45 @@
-import React, { useState } from "react";
-import { signInWithEmailAndPassword, getAuth } from "firebase/auth";
-import { Link, useNavigate } from "react-router-dom";
-import { auth } from "../../services/firebase-config";
-import "./LoginPage.css";
+import React, { useState } from 'react';
+import { signInWithEmailAndPassword, getAuth } from 'firebase/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import { auth } from '../../services/firebase-config';
+import './LoginPage.css';
 
 const Login = () => {
   const [error, setError] = useState(false);
   const navigate = useNavigate();
-  let username = "";
+  let username = '';
   const SignupHandler = () => {
-    navigate("/signup");
+    navigate('/signup');
   };
-  const handleLogin = async (e) => {
+  const handleLogin = async e => {
     e.preventDefault();
 
     const email = e.target[0].value;
     const password = e.target[1].value;
 
     try {
-      signInWithEmailAndPassword(auth, email, password).then(
-        (userCredential) => {
-          // Signed in
-          const user = userCredential.user;
-          console.log(user);
-          username = user.displayName;
-          console.log(username);
-          // ...
-        }
-      );
-      navigate("/");
+      signInWithEmailAndPassword(auth, email, password).then(userCredential => {
+        // Signed in
+        const user = userCredential.user;
+        console.log(user);
+        username = user.displayName;
+        console.log(username);
+        // ...
+      });
+      navigate('/');
     } catch (error) {
       setError(true);
-      console.log("giris yapamadin");
+      console.log('giris yapamadin');
     }
   };
 
   return (
     <div className="login">
       <div className="loginWrapper">
-        <div className="loginLeft">
-          <span className="loginDesc">
-            Login to connect with cinephiles, criticize and share your favorite
-            movies.
-          </span>
-        </div>
+        <span className="loginDesc">
+          Login to connect with cinephiles, criticize and share your favorite
+          movies.
+        </span>
         <div className="loginRight">
           <div className="loginBox">
             <div className="bottom">
