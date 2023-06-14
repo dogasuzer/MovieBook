@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
 
 .review-form {
   background-color: rgba(214, 116, 94, 0.5);
-  width: 85%;
+  width: 70%;
   min-height: 250px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
@@ -21,7 +21,7 @@
 .review-form-action {
   margin: 5pt;
   height: 51px;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -36,7 +36,6 @@
 .review-form-div {
   justify-content: center;
   display: flex;
-  padding: 3%;
   width: 100%;
 }
 .review-form-buttons {
