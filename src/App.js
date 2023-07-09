@@ -1,29 +1,29 @@
-import classes from "./App.css";
-import Poster from "./components/welcome/Poster";
-import PopularMovies from "./components/welcome/PopularMovies";
+import classes from './App.css';
+import Poster from './components/welcome/Poster';
+import PopularMovies from './components/welcome/PopularMovies';
 import {
   BrowserRouter as Router,
   Route,
   Navigate,
   Routes,
-  useNavigate,
-} from "react-router-dom";
-import { Link } from "react-router-dom";
-import NewReview from "./components/NewReview/NewReview";
-import ReviewList from "./components/ReviewList/ReviewList";
-import MyPage from "./pages/mypage/MyPage";
-import UserStats from "./pages/mypage/userstats/UserStats";
-import MovieDetail from "./pages/moviedetail/MovieDetailPage";
-import MoviesPage from "./pages/movies/MoviesPage";
-import LoginPage from "./pages/authentication/LoginPage";
-import SignupPage from "./pages/authentication/SignupPage";
-import { auth, db } from "./services/firebase-config";
-import { query, collection, onSnapshot, addDoc } from "firebase/firestore";
-import { React, useContext } from "react";
-import { AuthContext } from "./services/context/AuthContext";
-import { signOut } from "firebase/auth";
-import LoginFirstPage from "./pages/authentication/LoginFirstPage";
-import { useEffect, useState } from "react";
+  useNavigate
+} from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import NewReview from './components/NewReview/NewReview';
+import ReviewList from './components/ReviewList/ReviewList';
+import MyPage from './pages/mypage/MyPage';
+import UserStats from './pages/mypage/userstats/UserStats';
+import MovieDetail from './pages/moviedetail/MovieDetailPage';
+import MoviesPage from './pages/movies/MoviesPage';
+import LoginPage from './pages/authentication/LoginPage';
+import SignupPage from './pages/authentication/SignupPage';
+import { auth, db } from './services/firebase-config';
+import { query, collection, onSnapshot, addDoc } from 'firebase/firestore';
+import { React, useContext } from 'react';
+import { AuthContext } from './services/context/AuthContext';
+import { signOut } from 'firebase/auth';
+import LoginFirstPage from './pages/authentication/LoginFirstPage';
+import { useEffect, useState } from 'react';
 
 function App() {
   const { currentUser } = useContext(AuthContext);
@@ -39,25 +39,25 @@ function App() {
   const [userReviews, setUserReviews] = useState();
   const navigate = useNavigate();
 
-  const NewReviewHandler = async (newReview) => {
+  const NewReviewHandler = async newReview => {
     try {
-      const docRef = await addDoc(collection(db, "review"), {
+      const docRef = await addDoc(collection(db, 'review'), {
         reviewMovieTitle: newReview.reviewMovieTitle,
         reviewText: newReview.reviewText,
         userName: newReview.userName,
-        userRating: newReview.userRating,
+        userRating: newReview.userRating
       });
-      console.log("Document written with ID: ", docRef.id);
+      console.log('Document written with ID: ', docRef.id);
     } catch (e) {
-      console.error("Error adding document: ", e);
+      console.error('Error adding document: ', e);
     }
   };
 
   useEffect(() => {
-    const reviewCollectionRef = query(collection(db, "review"));
-    const getUserReviews = onSnapshot(reviewCollectionRef, (querySnapshot) => {
+    const reviewCollectionRef = query(collection(db, 'review'));
+    const getUserReviews = onSnapshot(reviewCollectionRef, querySnapshot => {
       let reviewArr = [];
-      querySnapshot.forEach((doc) => {
+      querySnapshot.forEach(doc => {
         reviewArr.push({ ...doc.data(), id: doc.id });
       });
       setUserReviews(reviewArr);
@@ -72,11 +72,11 @@ function App() {
   const authenticationHandler = () => {
     console.log(auth.currentUser);
     if (auth.currentUser == null) {
-      navigate("/login");
+      navigate('/login');
     }
     if (auth.currentUser !== null) {
       logout();
-      console.log("I log out yeyyyyyy!!!!!!!");
+      console.log('I log out yeyyyyyy!!!!!!!');
     }
   };
 
@@ -102,12 +102,12 @@ function App() {
         <button
           className="Login-widget"
           style={{
-            backgroundColor: auth.currentUser !== null ? "#ecc3c3" : "#d6745e",
-            color: auth.currentUser !== null ? "#811b10" : "#811b10",
+            backgroundColor: auth.currentUser !== null ? '#ecc3c3' : '#d6745e',
+            color: auth.currentUser !== null ? '#811b10' : '#811b10'
           }}
           onClick={authenticationHandler}
         >
-          {auth.currentUser !== null ? "Logout" : "Login"}
+          {auth.currentUser !== null ? 'Logout' : 'Login'}
         </button>
       </header>
 
@@ -140,8 +140,7 @@ function App() {
         <Route
           path="/posts"
           element={
-            <div>
-              {" "}
+            <div className="posts-page">
               <NewReview onReviewSubmit={NewReviewHandler} />
               <ReviewList items={userReviews} />
             </div>
@@ -156,7 +155,7 @@ function App() {
           <div className="About">
             <h1>ABOUT</h1>
             <p>
-              {" "}
+              {' '}
               This Website is made by Doga Suzer Y. &#10084; <br></br> This
               project is a showcase for my knowledge of : REACT, JavaScript,
               Working with an API, Connecting Firebase Database, Using
@@ -169,10 +168,10 @@ function App() {
             <h1>CONTACT</h1>
             <ul className="Contact-list">
               <li>
-                Learn more about me on {"    "}
+                Learn more about me on {'    '}
                 <a href="https://www.linkedin.com/in/helin-doga-suzer-884029217/">
-                  Linkedin{" "}
-                </a>{" "}
+                  Linkedin{' '}
+                </a>{' '}
               </li>
               <li>Learn more about me on my website</li>
               <li>Visit my Github page</li>
